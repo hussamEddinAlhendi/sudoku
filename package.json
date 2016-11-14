@@ -1,0 +1,16 @@
+{
+  "name": "sudoku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "postinstall": "npm install -g bower; bower install"
+  },
+  "author": "Hussam Eddin Alhendi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.4.5",
+    "twit": "^2.2.5"
+  }
+}

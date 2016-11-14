@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app='sudoku'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cash Basha sudoku</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+  </head>
+  <body>
+  <div class="page-header  jumbotron header">
+        <h2 class="text-center"><strong><em>Cash Basha</em></strong><p>Sudoku Game</p></h2>
+  </div>
+  <script src="lib/angular/angular.js"></script>
+  <script src="app/app.js"></script>
+  <div class="row" ng-controller="sudokuCtrl">
+    <div class="col-md-4 col-md-offset-4" >
+      <table>
+        <caption>Press on the number to change</caption>
+        <colgroup><col><col><col>
+        <colgroup><col><col><col>
+        <colgroup><col><col><col>
+        <tbody>
+          <tr> <td ng-repeat="b in board[0] track by $index" ng-click="change(0, $index)">{{b}}
+          <tr> <td ng-repeat="b in board[1] track by $index" ng-click="change(1, $index)">{{b}}
+          <tr> <td ng-repeat="b in board[2] track by $index" ng-click="change(2, $index)">{{b}}
+        </tbody>
+        <tbody> 
+          <tr> <td ng-repeat="b in board[3] track by $index" ng-click="change(3, $index)">{{b}}
+          <tr> <td ng-repeat="b in board[4] track by $index" ng-click="change(4, $index)">{{b}}
+          <tr> <td ng-repeat="b in board[5] track by $index" ng-click="change(5, $index)">{{b}}
+        </tbody>
+        <tbody>
+          <tr> <td ng-repeat="b in board[6] track by $index" ng-click="change(6, $index)">{{b}}
+          <tr> <td ng-repeat="b in board[7] track by $index" ng-click="change(7, $index)">{{b}}
+          <tr> <td ng-repeat="b in board[8] track by $index" ng-click="change(8, $index)">{{b}}
+        </tbody>
+      </table>
+
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="finish()">Finish</button>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="sudoku.js"></script>
+  </body>
+</html>
