@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/server.js",
-    "postinstall": "npm install -g bower; bower install"
+    "start": "nodemon server/server.js"
   },
   "author": "Hussam Eddin Alhendi",
   "license": "ISC",
